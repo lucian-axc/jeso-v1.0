@@ -36,11 +36,12 @@ section {
 }
 
 .project {
-  padding: 3% 1%;
+  padding: 3% 4%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: beige;
-  border-radius: 50px; 
+  border-radius: 50px;
 }
 
 .project-info {
@@ -50,5 +51,6 @@ section {
 }
 
 .project img {
-  border-radius: 50%;
+  border-radius: 100px;
+  height: 200px;
 }
