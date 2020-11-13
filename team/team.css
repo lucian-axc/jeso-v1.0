@@ -12,7 +12,7 @@ main {
 
 main section {
   padding: 3% 10%;
-  margin: 8% auto;
+  margin: 8% 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +35,7 @@ div {
   flex-wrap: wrap;
   align-content: flex-start;
   color: #0c3c60;
-  background: beige;
+  background: #f7f7f7;
   border-radius: 50px;
 }
 
@@ -46,9 +46,11 @@ div {
 .member .role {
   margin: auto;
   text-align: center;
+  word-wrap: wrap;
 }
 
 .member h3 {
   font-weight: 400;
   font-style: italic;
+  color: #d13a36;
 }

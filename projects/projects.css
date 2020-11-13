@@ -40,7 +40,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: beige;
+  background: #f7f7f7;
   border-radius: 50px;
 }
 
@@ -53,4 +53,8 @@ section {
 .project img {
   border-radius: 100px;
   height: 200px;
+}
+
+.project h3 {
+  color: #d13a36;
 }

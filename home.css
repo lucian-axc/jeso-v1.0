@@ -290,7 +290,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
-  background-color: beige;
+  background: #f7f7f7;
   border-radius: 30px;
 }
 

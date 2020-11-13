@@ -34,16 +34,18 @@ section.services {
 .service {
   padding: 5%;
   margin: 2% auto;
-  background-color: beige;
-  /* border-radius: 10%; */
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #f7f7f7;
   border-radius: 50px;
 }
 
 .services h2 {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .services span {
   font-style: italic;
   font-weight: bold;
+  color: #d13a36;
 }
