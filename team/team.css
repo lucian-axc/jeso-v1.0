@@ -2,7 +2,6 @@ section img {
   width: 140px;
   height: auto;
   display: inline;
-  border-radius: 20%;
 }
 
 main {
@@ -37,7 +36,11 @@ div {
   align-content: flex-start;
   color: #0c3c60;
   background: beige;
-  border-radius: 10%;
+  border-radius: 50px;
+}
+
+.member img {
+  border-radius: 20px;
 }
 
 .member .role {
