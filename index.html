@@ -12,7 +12,9 @@
 
   <body>
     <header>
-      <img id="logo" src="./media/logo2.png" alt="logo">
+      <div class="logo">
+        <img id="logo" src="./media/logo2.png" alt="logo">
+      </div>
       <nav>
         <a href="#" style="font-weight: bold">Home</a>
         <a href="./concept/concept.html">The Concept</a>
@@ -87,7 +89,7 @@
       <section class="">
         <div class="about">
           <h1>ABOUT US</h1>
-          <p>We are JESO, which is the abbreviation of Junior Enterprise Sonderborg. We are a non-profit organisation initiated in
+          <p>We are <span>JESO</span>, which is the abbreviation of <span>Junior Enterprise Sonderborg</span>. We are a non-profit organisation initiated in
             October 2019 by nine motivated students from SDU Sonderborg. We are currently a Junior Initiative, which embraces the
             Junior Enterprise concept and aims at becoming part of the Junior Enterprise Europe network by the end of October
             2020.
@@ -118,17 +120,22 @@
       </section>
       <section class="contact">
         <h1 id="contact">CONTACT US</h1>
-        
-        <div>
-          <img src="#" alt="---Google Maps widget---">
-          <p>We are located at Startup Alsion. Alsion 2, 6400 Sonderborg, Denmark</p>
-        </div>
-        <div>
-          <img src="#" alt="letter image">
-          <p>jesonderborg@gmail.com</p>
-          <img src="#" target="blank" alt="facebook page redirect">
-          <img src="#" target="blank" alt="Instagram page redirect">
-          <img src="#" target="blank" alt="LinkedIn page redirect">
+        <div class="contact-container">
+          <!-- <a href="https://www.openstreetmap.org/#map=18/36.036020/-86.787600" target="_blank">---OPEN STREET MAP WIDGET---"</a> -->
+          <!-- <a href="https://google.com/maps?q=36.036020,-86.787600" target="_blank">---GOOGLE MAPS WIDGET---"</a> -->
+          <!-- <a href="https://google.com/maps?q=54.913436,9.778416" target="_blank">---GOOGLE MAPS WIDGET---"</a> -->
+          <!-- <a href="#" onclick="drawMap();">Map</a> -->
+          <div id="map" class="map">
+            <img src="./media/map-prt.jpg" alt="map">
+          </div>
+          <div class="map-para">
+            <p>We are located at Startup Alsion. Alsion 2, 6400 Sonderborg, Denmark</p>
+            <p>If you wanna reach out to us, feel free to contact us via email, Social Media or via the contact form below.</p>
+            <p><img class="SoMe" src="./media/letter.png" alt="letter image">jesonderborg@gmail.com</p>
+            <img class="SoMe" src="./media/SoMe/fb_logo.jpg" target="blank" alt="facebook page redirect">
+            <img class="SoMe" src="./media/SoMe/instagram_logo.jpg" target="blank" alt="Instagram page redirect">
+            <img class="SoMe" src="./media/SoMe/linkedin_logo.jpg" target="blank" alt="LinkedIn page redirect">
+          </div>
         </div>
         <form>
           <div class="form">
@@ -161,5 +168,51 @@
       <p>jesonderborg@gmail.com</p>
       <p>Startup Alsion, Alsion 2<br> 6400 Sønderborg</p>
     </footer>
+    <script src="scripts/geoController.js"></script>
+    <!-- <script>
+      'use strict';
+
+      // geoController.getCurrentLocation(function (pos) {
+      //     window.location.href = `https://google.com/maps?q=${pos.coords.latitude},${pos.coords.longitude}`;
+      //   })
+      var gmapController = (function() {
+        // Private variables
+        let map = null;
+        let jesoMap = {
+          "lat": 54.913436,
+          "lng": 9.778416
+        };
+
+        // Private functions
+        function initialize() {
+          // Draw the map
+          drawMap(jesoMap);
+        }
+        
+        function drawMap(mapObject) {
+          // Create a lat/lng object
+          let pos = new google.maps.LatLng(mapObject.lat, mapObject.lng);
+
+          //Create map options
+          let mapOptions = {
+            center: pos,
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+          //Create new google map
+          map = new google.maps.Map(
+            document.getElementById("map"), mapOptions);
+        }
+
+        // Public functions
+        return {
+          "initialize": initialize
+        }
+      }) ();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key='AIzaSyCq0FQ9tFkOeDcykycCIoKVV2m7pPcCpdA'&callback=gmapController.initialize">
+    </script>
+  -->
   </body>
 </html>

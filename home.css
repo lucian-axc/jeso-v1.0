@@ -250,6 +250,12 @@ img {
   margin: 100px auto 50px;
 }
 
+.about span {
+  /* color: #d13a36; */
+  /* color: #ffb78c; */
+  font-weight: 900;
+}
+
 .buttons {
   margin-top: 5%;
 }
@@ -266,9 +272,13 @@ img {
 .projects {
   margin: 30px 50px;
   padding: 20px 30px;
-  background-color: beige;
+  background-color: #f7f7f7;
   border-radius: 30px;
   max-width: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .services-projects a {
@@ -286,6 +296,7 @@ img {
 .form {
   margin: 10% auto;
   padding: 5%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -335,4 +346,28 @@ img {
 .pair input,
 .submit textarea {
   border-bottom: solid 3px #0c3c60;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-para {
+}
+
+.SoMe {
+  width: 8%;
+  height: 12%;
+  margin: 0 2%;
+}
+
+/* Google Maps widget */
+/* .map {
+  height: 400px;
+  width: 100%%;
+} */
+.map {
+  width: 100%;
+  height: auto;
 }
